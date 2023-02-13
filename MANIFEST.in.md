@@ -1,1 +1,1 @@
-include src/moviepy_clipper/font/*
+include *
