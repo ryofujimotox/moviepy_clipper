@@ -1,2 +1,2 @@
 include *.ttf
-include src/moviepy_clipper/font/*.ttf
+include src/*/font/*.ttf
