@@ -1,15 +1,25 @@
 from moviepy.editor import TextClip
+import os
 
 FONT_SIZE: float = 70  # 文字サイズ
 LENGTH_PER_SECOND: float = 180  # 1秒間に進む長さ
 
 
+def getLibraryDir():
+    cFile = __file__
+    cDir = os.path.dirname(cFile)
+    cDir = os.path.dirname(cDir)
+    cDir = os.path.dirname(cDir)
+    return cDir + "/"
+
+
 # スクロールするテキストClipを返す
 def ScrollingText(text: str, duration: float, stream_range: float):
+
     # テキストclip生成
     clip = TextClip(
         text,
-        font="font/LINESeedJP_A_TTF_Bd.ttf",
+        font=getLibraryDir() + "/font/LINESeedJP_A_TTF_Bd.ttf",
         fontsize=FONT_SIZE,
         color="white",
         stroke_color="#4C444D",
