@@ -19,7 +19,7 @@ def ScrollingText(text: str, duration: float, stream_range: float):
     # テキストclip生成
     clip = TextClip(
         text,
-        font=getLibraryDir() + "/font/LINESeedJP_A_TTF_Bd.ttf",
+        font=getLibraryDir() + "font/LINESeedJP_A_TTF_Bd.ttf",
         fontsize=FONT_SIZE,
         color="white",
         stroke_color="#4C444D",
