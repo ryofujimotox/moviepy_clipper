@@ -2,7 +2,10 @@ from moviepy.editor import VideoFileClip, concatenate_videoclips
 from math import ceil
 
 
-def RepeatVideo(source: str, duration: int = 0):
+def RepeatVideo(
+    source: str,
+    duration: int = 0,
+):
     """
 
     繰り返し再生を続けるclipを返す。
@@ -40,4 +43,4 @@ def RepeatVideo(source: str, duration: int = 0):
     combinedClip = combinedClip.subclip(0, currentDuration)
 
     # clipと実際の再生時間を返す
-    return combinedClip, currentDuration
+    return combinedClip
