@@ -1,4 +1,4 @@
-from .bgm import _bgm
+from .audio import _audio
 from .image import _image
 from .repeat_mp4 import RepeatVideo
 from .scrolling_text import ScrollingText, getDurationTextScroll
