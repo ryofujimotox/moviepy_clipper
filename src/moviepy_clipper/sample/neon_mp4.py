@@ -1,9 +1,9 @@
 from moviepy.editor import CompositeVideoClip, VideoFileClip
-from .resize import resizeFit
+from ..resize import resizeFit
 from .scrolling_text import ScrollingText
-from .audio import mergeAudio
+from ..audio import mergeAudio
 
-from .repeat import repeat
+from ..repeat import repeat
 
 
 def neon_mp4(

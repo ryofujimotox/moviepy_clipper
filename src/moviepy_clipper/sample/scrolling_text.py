@@ -1,9 +1,8 @@
 from moviepy.editor import TextClip
 import os
 
-from .scrolling import repeatScroll, getDurationScrolled
-
-FONT_SIZE: float = 70  # 文字サイズ
+from ..scroll_rl import repeatScroll
+from ..scroll_rl_text import FONT_SIZE, getTextContentSize
 
 
 # スクロールするテキストClipを返す
@@ -31,14 +30,3 @@ def ScrollingText(text: str, duration: float, stream_range: float):
 # ライブラリのパス取得
 def getLibraryDir():
     return os.path.dirname(os.path.abspath(__file__))
-
-
-# テキストのコンテンツサイズを取得する
-def getTextContentSize(text):
-    return FONT_SIZE * len(text)
-
-
-# 1回のスクロールにかかる時間 ( テキストが見えなくなるまで )
-def getDurationTextScroll(stream_range, text):
-    content_size = getTextContentSize(text)
-    return getDurationScrolled(stream_range, content_size)

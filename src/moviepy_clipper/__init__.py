@@ -1,7 +1,9 @@
+from .sample.image import _image
+from .sample.scrolling_text import ScrollingText
+from .sample.neon_mp4 import *
+
 from .audio import _audio
-from .image import _image
-from .scrolling_text import ScrollingText, getDurationTextScroll
+from .scroll_rl_text import getDurationTextScroll
 from .resize import *
-from .neon_mp4 import *
 
 __version__ = "0.1.0"
