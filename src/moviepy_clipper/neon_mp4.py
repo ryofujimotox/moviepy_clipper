@@ -1,9 +1,9 @@
-from moviepy.editor import CompositeVideoClip
-from .repeat_mp4 import RepeatVideo
+from moviepy.editor import CompositeVideoClip, VideoFileClip
 from .resize import resizeFit
 from .scrolling_text import ScrollingText
-
 from .audio import mergeAudio
+
+from .repeat import repeat
 
 
 def neon_mp4(
@@ -50,4 +50,21 @@ def neon_mp4(
     if bgm:
         clip = mergeAudio(clip, bgm)
 
+    return clip
+
+
+def RepeatVideo(
+    source: str,
+    duration: int = 0,
+):
+
+    # === ファイルの読み込み
+    clip = VideoFileClip(source)
+    if not clip:
+        print("Source Not Found")
+        return None
+
+    clip = repeat(clip, duration)
+
+    # clipと実際の再生時間を返す
     return clip
