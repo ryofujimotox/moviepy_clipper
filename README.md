@@ -37,6 +37,7 @@ def main():
     clip.write_videofile("/〇〇/new_movie.mp4")
 ```
 
+https://github.com/ryofujimotox/moviepy_clipper/blob/main/src/moviepy_clipper/sample/neon_mp4.py
 
 
 
@@ -64,6 +65,10 @@ def main():
     clip.write_videofile("/〇〇/new_movie.mp4")
 ```
 
+https://github.com/ryofujimotox/moviepy_clipper/blob/main/src/moviepy_clipper/scroll_rl.py
+
+
+
 
 #### scrolling text
 
@@ -85,6 +90,8 @@ def main():
     clip.write_videofile("/〇〇/new_movie.mp4")
 ```
 
+https://github.com/ryofujimotox/moviepy_clipper/blob/main/src/moviepy_clipper/sample/scrolling_text.py
+
 
 
 
@@ -95,6 +102,9 @@ def main():
 ### Resize
 
 Resize using the contain method
+
+https://github.com/ryofujimotox/moviepy_clipper/blob/main/src/moviepy_clipper/resize.py
+
 
 ``` python
 from moviepy_clipper import resize
@@ -144,6 +154,8 @@ def main():
 ### Repeat
 
 `concatenate_videoclips` and `cut`
+
+https://github.com/ryofujimotox/moviepy_clipper/blob/main/src/moviepy_clipper/repeat.py
 
 ``` python
 from moviepy_clipper import repeat
