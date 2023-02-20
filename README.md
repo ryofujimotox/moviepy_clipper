@@ -16,6 +16,8 @@ pip install git+https://github.com/ryofujimotox/moviepy_clipper
 - scrolling text
 - override sound
 
+https://github.com/ryofujimotox/moviepy_clipper/blob/main/src/moviepy_clipper/sample/neon_mp4.py
+
 ``` python
 from moviepy_clipper import neon_mp4
 
@@ -37,8 +39,6 @@ def main():
     clip.write_videofile("/〇〇/new_movie.mp4")
 ```
 
-https://github.com/ryofujimotox/moviepy_clipper/blob/main/src/moviepy_clipper/sample/neon_mp4.py
-
 
 
 
@@ -48,6 +48,7 @@ https://github.com/ryofujimotox/moviepy_clipper/blob/main/src/moviepy_clipper/sa
 #### scrolling clip
 
 Scroll clip right to left 
+https://github.com/ryofujimotox/moviepy_clipper/blob/main/src/moviepy_clipper/scroll_rl.py
 
 ``` python
 from moviepy_clipper import repeatScroll
@@ -65,14 +66,13 @@ def main():
     clip.write_videofile("/〇〇/new_movie.mp4")
 ```
 
-https://github.com/ryofujimotox/moviepy_clipper/blob/main/src/moviepy_clipper/scroll_rl.py
-
 
 
 
 #### scrolling text
 
 Scroll text clip right to left
+https://github.com/ryofujimotox/moviepy_clipper/blob/main/src/moviepy_clipper/sample/scrolling_text.py
 
 ``` python
 from moviepy_clipper import ScrollingText
@@ -90,8 +90,6 @@ def main():
     clip.write_videofile("/〇〇/new_movie.mp4")
 ```
 
-https://github.com/ryofujimotox/moviepy_clipper/blob/main/src/moviepy_clipper/sample/scrolling_text.py
-
 
 
 
@@ -101,10 +99,7 @@ https://github.com/ryofujimotox/moviepy_clipper/blob/main/src/moviepy_clipper/sa
 
 ### Resize
 
-Resize using the contain method
-
 https://github.com/ryofujimotox/moviepy_clipper/blob/main/src/moviepy_clipper/resize.py
-
 
 ``` python
 from moviepy_clipper import resize
@@ -126,8 +121,6 @@ def main():
 
 
 #### resize fit
-
-Resize fit
 
 ``` python
 from moviepy_clipper import resizeFit
