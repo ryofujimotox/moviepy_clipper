@@ -48,6 +48,7 @@ def main():
 #### scrolling clip
 
 Scroll clip right to left 
+
 https://github.com/ryofujimotox/moviepy_clipper/blob/main/src/moviepy_clipper/scroll_rl.py
 
 ``` python
@@ -72,6 +73,7 @@ def main():
 #### scrolling text
 
 Scroll text clip right to left
+
 https://github.com/ryofujimotox/moviepy_clipper/blob/main/src/moviepy_clipper/sample/scrolling_text.py
 
 ``` python
